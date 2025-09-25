@@ -1,66 +1,47 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>product-landing-page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUICKCART</title>
     <link rel="stylesheet" href="quickcart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link
-      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet">
-      <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet">
+     
     </head>
     <body>
       <header  id="header">
         <div class="logo">
-        <img id="header-img" src="">
-    </div>    
-       <h1 id="header-img">QuickCart</h1> 
+        <img id="header-icon" src="images/images/icons/cart-icon.png">
+       </div> 
+       <h1 id="header-name">QuickCart</h1> 
+
         <nav id="nav-bar">
          
-            <a class="nav-link" href="#login">Login</a>
-           <a class="nav-link" href="#Home">Home</a>
-            <a class="nav-link" href="#About_us">About us</a>
-          
+         
+            <a class="nav-link" href="#login">LOGIN</a>
+           <a class="nav-link" href="#Home">SHOP</a>
+            <a class="nav-link" href="#About_us">ABOUT US</a>
+            <a class="nav-link" href="cart.html">CART</a>
+          <button id="shareData">REFER</button>
             </nav>
+             
+             
             </header>
             <form id="form">
               <section  id="login">
               <p>"Don't miss out-sign in to secure your deal."</p>
-              <input id="email" name="email" type="email" placeholder="enter your email" required></br>
-              <input id="submit" type="submit" onclick="checkEmail()
-              ">
+              <input id="email" name="email" type="email" placeholder="Enter your email" required></br>
+              <input id="submit" type="submit" onclick="checkEmail() ">
               </form>
               </section>
             <section class="container" id="Home">
-              <h3>Keep shopping for<h3></br>
-              <div class="container">
-              <div class="images">
-              <img src="https://cdn.pixabay.com/photo/2022/12/04/07/03/woman-7633843_1280.jpg" alt="fashion">
-              <p>Fashion</p>
-              
-              <div class="images">
-                <img src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg" alt="electronic">
-                <p>Electronic</p>
-             
-                <div class="images">
-                  <img src="https://i.pinimg.com/736x/6c/a8/f0/6ca8f02f56d48f0daf38063da995e763.jpg" alt="grocery">
-                  <p>Grocery</p>
-                  
-                  <div class="images">
-                    <img src="https://media.istockphoto.com/id/487770577/photo/makeup-set-on-table-front-view.jpg?s=612x612&w=0&k=20&c=IS_ZuHCF3N66jhDMwt2s7J_PGWABlpv2ISEAwpJ4JKU=" alt="beauty">
-                    <p>Beauty</p>
-                   
-                    <div class="images">
-                      <img src="https://cdn.pixabay.com/photo/2017/08/02/01/01/living-room-2569325_1280.jpg" alt="furniture">
-                      <p>Furniture</p>
-                     </div>
-                     </div>
-  </section> 
-  <section class="video">
-    <video  id="video" autoplay muted loop width="640">
-<source src="https://cdn.pixabay.com/video/2022/10/04/133535-757013954_tiny.mp4" type="video/mp4" >                   
-
-</section>
- <section class="container" id="About_us">
+              <h3 class="heading">Keep shopping for<h3>
+                <div class="product-grid">
+              </div>
+              </section> 
+               <section class="container" id="About_us">
    <div class="grid">
 <div class="icon">
 <i class="fa fa-3x fa-fire"></i>
@@ -89,20 +70,27 @@
           </div>
           </div>
           <footer>
-            <p><strong>&copy; 2016 QuickCart.All rights reserved.</strong></p>
+            <p><strong>&copy; 2025 QuickCart.All rights reserved.</strong></p>
             </footer>
             <script>
-              function checkEmail(){ 
-              const emailInput=document.getElementById("email").value;
-              
-              const submit=document.getElementById("submit");
-              if(emailInput.trim()===""){
-                
-                  alert('Enter your email');
-                }
-                else{
-                 
-                  alert(`Your Email ${emailInput} saved`);
-                   localStorage.getItem("username");
-                }
-                localStorage.setItem("useremail",emailInput);
+               if ('serviceWorker' in navigator) {
+           
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                .then(registration => {
+                    
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(error => {
+                   
+                    console.error(`Service Worker registration failed: ${error}`);
+                });
+            });
+        }
+            </script>
+            <script src="Data/product.js"></script>
+            <script src="Data/quickcart.js"></script>
+             <script src="Data/email.js"></script>
+             <script src="Data/Data-Sharing.js"></script>
+                </body>
+                </html>

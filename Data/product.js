@@ -1,0 +1,76 @@
+const product=[
+    {
+        image:"images/images/products/round-airtight-food-storage-containers.jpg",
+         name:"round-airtight-food-storage-containers",
+        price:700
+
+    },{
+image:"images/images/products/men-chino-pants-beige.jpg",
+name:"men-chino-pants-beige",
+price:800
+    },{
+        image:"images/images/products/black-2-slot-toaster.jpg",
+        name:"black-2-slot-toaster",
+        price:1200
+    },
+    {
+        image:"images/images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
+        name:"adults-plain-cotton-tshirt-2-pack-teal",
+        price:600
+    },
+    {
+        image:"images/images/products/athletic-cotton-socks-6-pairs.jpg",
+        name:"athletic-cotton-socks-6-pairs",
+        price:300
+    },
+    {
+        image:"images/images/products/blackout-curtain-set-beige.webp",
+        name:"blackout-curtain-set-beige",
+        price:550
+    },
+    {
+        image:"images/images/products/coffeemaker-with-glass-carafe-black.jpg",
+        name:"coffeemaker-with-glass-carafe-black",
+        price:2200
+    },
+    {
+        image:"images/images/products/duvet-cover-set-blue-twin.jpg",
+        name:"duvet-cover-set-blue-twin",
+        price:356
+    },
+{
+        image:"images/images/products/intermediate-composite-basketball.jpg",
+        name:"intermediate-composite-basketball",
+        price:1750
+    },
+    {
+        image:"images/images/products/liquid-laundry-detergent-plain.jpg",
+        name:"liquid-laundry-detergent-plain",
+        price:399
+    },
+    {
+        image:"images/images/products/men-navigator-sunglasses-brown.jpg",
+        name:"men-navigator-sunglasses-brown",
+        price:1999
+    },
+    {
+        image:"images/images/products/trash-can-with-foot-pedal-50-liter.jpg",
+        name:"trash-can-with-foot-pedal-50-liter",
+        price:700
+    },
+    {
+        image:"images/images/products/women-stretch-popover-hoodie-black.jpg",
+        name:"women-stretch-popover-hoodie-black",
+        price:799
+    },
+    {
+        image:"images/images/products/umbrella.jpg",
+        name:"umbrella",
+        price:399
+    },
+    {
+        image:"images/images/products/straw-sunhat.webp",
+        name:"straw-sunha",
+        price:299
+    }
+];
