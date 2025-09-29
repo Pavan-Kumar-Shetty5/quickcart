@@ -20,8 +20,8 @@
   ],
   "share_target": {
     "action": "/quickcart.html",
-    "method": "POST",
-    "enctype":"multipart/form-data",
+    "method": "GET",
+    "enctype":"application/x-www-form-urlencoded",
     "params": {
       "title": "name",
       "text": "text",
