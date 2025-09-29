@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUICKCART</title>
+    <link rel="stylesheet" href="quickcart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="manifest" href="/manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet">
+     
+    </head>
+    <body>
+      <header  id="header">
+        <div class="logo">
+        <img id="header-icon" src="images/images/icons/cart-icon.png">
+       </div> 
+       <h1 id="header-name">QuickCart</h1> 
+
+        <nav id="nav-bar">
+         
+         
+            <a class="nav-link" href="#login">LOGIN</a>
+           <a class="nav-link" href="#Home">SHOP</a>
+            <a class="nav-link" href="#About_us">ABOUT US</a>
+            <a class="nav-link" href="cart.html">CART</a>
+          <button id="shareData">REFER</button>
+            </nav>
+             
+             
+            </header>
+            <form id="form">
+              <section  id="login">
+              <p>"Don't miss out-sign in to secure your deal."</p>
+              <input id="email" name="email" type="email" placeholder="Enter your email" required></br>
+              <input id="submit" type="submit" onclick="checkEmail() ">
+              </form>
+              </section>
+            <section class="container" id="Home">
+              <h3 class="heading">Keep shopping for<h3>
+                <div class="product-grid">
+              </div>
+              </section> 
+               <section class="container" id="About_us">
+   <div class="grid">
+<div class="icon">
+<i class="fa fa-3x fa-fire"></i>
+</div>
+<div class="desc">
+  <h2>Premium Materials</h2>
+  <p>Experience the feel of premium materials-soft,durable, and designed to last.</p>
+  </div>
+  </div>
+  <div class="grid">
+  <div class="icon">
+    <i class="fa fa-3x fa-truck"></i>
+    </div>
+    <div class="desc">
+      <h2>Fast Shipping</h2>
+      <p>"Fast,reliable,and right to your doorstep.We also provide free returns if you are not satisfied."</p>
+      </div>
+      </div>
+      <div class="grid">
+      <div class="icon">
+        <i class="fa fa-3x fa-battery-full"></i>
+        </div>
+        <div class="desc">
+          <h2>Quality Assurance</h2>
+          <p>"For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your materials"</p>
+          </div>
+          </div>
+          <footer>
+            <p><strong>&copy; 2025 QuickCart.All rights reserved.</strong></p>
+            </footer>
+            <script>
+               if ('serviceWorker' in navigator) {
+           
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                .then(registration => {
+                    
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(error => {
+                   
+                    console.error(`Service Worker registration failed: ${error}`);
+                });
+            });
+        }
+            </script>
+            <script src="Data/product.js"></script>
+            <script src="Data/quickcart.js"></script>
+             <script src="Data/email.js"></script>
+             <script src="Data/Data-Sharing.js"></script>
+                </body>
+                </html>
