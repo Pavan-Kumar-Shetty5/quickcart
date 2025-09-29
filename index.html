@@ -6,7 +6,7 @@
     <title>QUICKCART</title>
     <link rel="stylesheet" href="quickcart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet">
      
     </head>
@@ -76,7 +76,7 @@
                if ('serviceWorker' in navigator) {
            
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
+                navigator.serviceWorker.register('sw.js')
                 .then(registration => {
                     
                     console.log('Service Worker registered with scope:', registration.scope);
