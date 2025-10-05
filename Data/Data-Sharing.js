@@ -7,7 +7,7 @@ const shareData = document.getElementById('shareData');
             
         } else {
            
-           
+    
             console.log("Dont  display button")
           
         }
