@@ -219,10 +219,8 @@ footer{
     
 
     }
-    nav  {
-      
-        display: block;
-        
+    #shareData{
+       font-size: 0.5rem;
     }
     .product-image {
         max-width: 100%;
