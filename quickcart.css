@@ -17,7 +17,7 @@ header{
 
 nav{
   display:flex;
-  gap:30px;
+  gap:0px;
   position:fixed;
   right:0;
   top:0;
@@ -197,14 +197,32 @@ footer{
 }
 
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
+    header  {
+        font-size: 1rem;
         max-width:100%
     }
+    #header-name{
+      font-size: 0.9rem;
+      
+    }
+    #header-icon{
+      width:50px;
+     margin-left:0px;
+      
+    }
+    #nav-bar{
+      font-size: 0.5rem;
+      display: flex;
+      gap:0px;
+     margin-top:16px;
+      padding: 0px;
+    
+
+    }
     nav  {
-      margin-top: 10px;
+      
         display: block;
-        padding:5px;
+        
     }
     .product-image {
         max-width: 100%;
